@@ -1,0 +1,136 @@
+:root {
+--clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+   --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-primary-light:#7ed56f;
+  --clr-primary-dark:#28b485;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color:#F6F8FA ;
+    font-size: 0.87rem;
+    /* color: white; */
+    background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0.15)), url("./images/countdown-black.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+.section-text {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+h3 {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+h4 {
+    letter-spacing: 4px;
+    color: var(--clr-grey-10);
+}
+p {
+     color: var(--clr-grey-9);
+}
+img {
+    display: block;
+    width: 100%;
+}
+section {
+    padding: 0rem 0;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 5rem auto;
+    max-width: 1170px;
+    overflow-x: hidden;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 3rem;
+    width: 95vw;
+  }
+}
+.deadline {
+    display: flex;
+}
+
+.deadline-format {
+    width: 5rem;
+    height: 5rem;
+    background-color:black;
+    margin-right: 1rem;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.deadline-format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  color: white;
+}
+.deadline h4:not(.expired) {
+  font-size: 2rem;
+  margin-bottom: 0.35rem;
+  letter-spacing: var(--spacing);
+  color: white;
+}
