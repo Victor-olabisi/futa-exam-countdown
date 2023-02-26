@@ -35,7 +35,7 @@ const examTime = getElement(".exam-time");
 const deadline = getElement(".deadline");
 const items = document.querySelectorAll(".deadline-format h4")
 
-const futureDate = new Date(2023,2,13,8,00,0);
+const futureDate = new Date(2023,3,3,8,00,0);
 const futureYear = futureDate.getFullYear();
 let futureMonth = futureDate.getMonth();
 let futureDay = futureDate.getDay()
@@ -82,23 +82,3 @@ function getRemainingTime(){
 
 }
 let countdown = setInterval(getRemainingTime,1000)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
